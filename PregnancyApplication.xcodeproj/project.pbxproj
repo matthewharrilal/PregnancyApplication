@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		764A388C2C3EBCBD00FA9552 /* MessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A388B2C3EBCBD00FA9552 /* MessageInputView.swift */; };
+		764A388F2C40394300FA9552 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A388E2C40394300FA9552 /* KeyboardManager.swift */; };
+		764A38912C403DF700FA9552 /* ChatDisplayOutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A38902C403DF700FA9552 /* ChatDisplayOutputViewController.swift */; };
+		764A38942C403EA400FA9552 /* ChatDisplayOutputCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A38932C403EA400FA9552 /* ChatDisplayOutputCollectionViewLayout.swift */; };
+		764A38962C40797D00FA9552 /* ChatDisplayOutputCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A38952C40797D00FA9552 /* ChatDisplayOutputCollectionViewCell.swift */; };
+		76CE07C62C165E1F0076FE5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CE07C52C165E1F0076FE5D /* AppDelegate.swift */; };
+		76CE07C82C165E1F0076FE5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CE07C72C165E1F0076FE5D /* SceneDelegate.swift */; };
+		76CE07CA2C165E1F0076FE5D /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CE07C92C165E1F0076FE5D /* ChatViewController.swift */; };
+		76CE07CD2C165E1F0076FE5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76CE07CB2C165E1F0076FE5D /* Main.storyboard */; };
+		76CE07CF2C165E200076FE5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76CE07CE2C165E200076FE5D /* Assets.xcassets */; };
+		76CE07D22C165E200076FE5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76CE07D02C165E200076FE5D /* LaunchScreen.storyboard */; };
+		76CE07DD2C165E200076FE5D /* PregnancyApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CE07DC2C165E200076FE5D /* PregnancyApplicationTests.swift */; };
+		76CE07E72C165E200076FE5D /* PregnancyApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CE07E62C165E200076FE5D /* PregnancyApplicationUITests.swift */; };
+		76CE07E92C165E200076FE5D /* PregnancyApplicationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CE07E82C165E200076FE5D /* PregnancyApplicationUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76CE07D92C165E200076FE5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76CE07BA2C165E1F0076FE5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76CE07C12C165E1F0076FE5D;
+			remoteInfo = PregnancyApplication;
+		};
+		76CE07E32C165E200076FE5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76CE07BA2C165E1F0076FE5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76CE07C12C165E1F0076FE5D;
+			remoteInfo = PregnancyApplication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		764A388B2C3EBCBD00FA9552 /* MessageInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInputView.swift; sourceTree = "<group>"; };
+		764A388E2C40394300FA9552 /* KeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
+		764A38902C403DF700FA9552 /* ChatDisplayOutputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDisplayOutputViewController.swift; sourceTree = "<group>"; };
+		764A38932C403EA400FA9552 /* ChatDisplayOutputCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDisplayOutputCollectionViewLayout.swift; sourceTree = "<group>"; };
+		764A38952C40797D00FA9552 /* ChatDisplayOutputCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDisplayOutputCollectionViewCell.swift; sourceTree = "<group>"; };
+		76CE07C22C165E1F0076FE5D /* PregnancyApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PregnancyApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76CE07C52C165E1F0076FE5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		76CE07C72C165E1F0076FE5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		76CE07C92C165E1F0076FE5D /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		76CE07CC2C165E1F0076FE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		76CE07CE2C165E200076FE5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76CE07D12C165E200076FE5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		76CE07D32C165E200076FE5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76CE07D82C165E200076FE5D /* PregnancyApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PregnancyApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76CE07DC2C165E200076FE5D /* PregnancyApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PregnancyApplicationTests.swift; sourceTree = "<group>"; };
+		76CE07E22C165E200076FE5D /* PregnancyApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PregnancyApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76CE07E62C165E200076FE5D /* PregnancyApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PregnancyApplicationUITests.swift; sourceTree = "<group>"; };
+		76CE07E82C165E200076FE5D /* PregnancyApplicationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PregnancyApplicationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76CE07BF2C165E1F0076FE5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76CE07D52C165E200076FE5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76CE07DF2C165E200076FE5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		764A38892C3EBC0000FA9552 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				76CE07C92C165E1F0076FE5D /* ChatViewController.swift */,
+				764A38902C403DF700FA9552 /* ChatDisplayOutputViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		764A388A2C3EBCA000FA9552 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				764A388B2C3EBCBD00FA9552 /* MessageInputView.swift */,
+				764A38952C40797D00FA9552 /* ChatDisplayOutputCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		764A388D2C40393400FA9552 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				764A388E2C40394300FA9552 /* KeyboardManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		764A38922C403E9000FA9552 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				764A38932C403EA400FA9552 /* ChatDisplayOutputCollectionViewLayout.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		76CE07B92C165E1F0076FE5D = {
+			isa = PBXGroup;
+			children = (
+				76CE07C42C165E1F0076FE5D /* PregnancyApplication */,
+				76CE07DB2C165E200076FE5D /* PregnancyApplicationTests */,
+				76CE07E52C165E200076FE5D /* PregnancyApplicationUITests */,
+				76CE07C32C165E1F0076FE5D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76CE07C32C165E1F0076FE5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76CE07C22C165E1F0076FE5D /* PregnancyApplication.app */,
+				76CE07D82C165E200076FE5D /* PregnancyApplicationTests.xctest */,
+				76CE07E22C165E200076FE5D /* PregnancyApplicationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76CE07C42C165E1F0076FE5D /* PregnancyApplication */ = {
+			isa = PBXGroup;
+			children = (
+				76CE07C52C165E1F0076FE5D /* AppDelegate.swift */,
+				76CE07C72C165E1F0076FE5D /* SceneDelegate.swift */,
+				764A38922C403E9000FA9552 /* Layouts */,
+				764A388D2C40393400FA9552 /* Helpers */,
+				764A388A2C3EBCA000FA9552 /* Views */,
+				764A38892C3EBC0000FA9552 /* Controllers */,
+				76CE07CB2C165E1F0076FE5D /* Main.storyboard */,
+				76CE07CE2C165E200076FE5D /* Assets.xcassets */,
+				76CE07D02C165E200076FE5D /* LaunchScreen.storyboard */,
+				76CE07D32C165E200076FE5D /* Info.plist */,
+			);
+			path = PregnancyApplication;
+			sourceTree = "<group>";
+		};
+		76CE07DB2C165E200076FE5D /* PregnancyApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				76CE07DC2C165E200076FE5D /* PregnancyApplicationTests.swift */,
+			);
+			path = PregnancyApplicationTests;
+			sourceTree = "<group>";
+		};
+		76CE07E52C165E200076FE5D /* PregnancyApplicationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				76CE07E62C165E200076FE5D /* PregnancyApplicationUITests.swift */,
+				76CE07E82C165E200076FE5D /* PregnancyApplicationUITestsLaunchTests.swift */,
+			);
+			path = PregnancyApplicationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76CE07C12C165E1F0076FE5D /* PregnancyApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76CE07EC2C165E200076FE5D /* Build configuration list for PBXNativeTarget "PregnancyApplication" */;
+			buildPhases = (
+				76CE07BE2C165E1F0076FE5D /* Sources */,
+				76CE07BF2C165E1F0076FE5D /* Frameworks */,
+				76CE07C02C165E1F0076FE5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PregnancyApplication;
+			productName = PregnancyApplication;
+			productReference = 76CE07C22C165E1F0076FE5D /* PregnancyApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+		76CE07D72C165E200076FE5D /* PregnancyApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76CE07EF2C165E200076FE5D /* Build configuration list for PBXNativeTarget "PregnancyApplicationTests" */;
+			buildPhases = (
+				76CE07D42C165E200076FE5D /* Sources */,
+				76CE07D52C165E200076FE5D /* Frameworks */,
+				76CE07D62C165E200076FE5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76CE07DA2C165E200076FE5D /* PBXTargetDependency */,
+			);
+			name = PregnancyApplicationTests;
+			productName = PregnancyApplicationTests;
+			productReference = 76CE07D82C165E200076FE5D /* PregnancyApplicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		76CE07E12C165E200076FE5D /* PregnancyApplicationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76CE07F22C165E200076FE5D /* Build configuration list for PBXNativeTarget "PregnancyApplicationUITests" */;
+			buildPhases = (
+				76CE07DE2C165E200076FE5D /* Sources */,
+				76CE07DF2C165E200076FE5D /* Frameworks */,
+				76CE07E02C165E200076FE5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76CE07E42C165E200076FE5D /* PBXTargetDependency */,
+			);
+			name = PregnancyApplicationUITests;
+			productName = PregnancyApplicationUITests;
+			productReference = 76CE07E22C165E200076FE5D /* PregnancyApplicationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76CE07BA2C165E1F0076FE5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					76CE07C12C165E1F0076FE5D = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					76CE07D72C165E200076FE5D = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 76CE07C12C165E1F0076FE5D;
+					};
+					76CE07E12C165E200076FE5D = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 76CE07C12C165E1F0076FE5D;
+					};
+				};
+			};
+			buildConfigurationList = 76CE07BD2C165E1F0076FE5D /* Build configuration list for PBXProject "PregnancyApplication" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76CE07B92C165E1F0076FE5D;
+			productRefGroup = 76CE07C32C165E1F0076FE5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76CE07C12C165E1F0076FE5D /* PregnancyApplication */,
+				76CE07D72C165E200076FE5D /* PregnancyApplicationTests */,
+				76CE07E12C165E200076FE5D /* PregnancyApplicationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76CE07C02C165E1F0076FE5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76CE07D22C165E200076FE5D /* LaunchScreen.storyboard in Resources */,
+				76CE07CF2C165E200076FE5D /* Assets.xcassets in Resources */,
+				76CE07CD2C165E1F0076FE5D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76CE07D62C165E200076FE5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76CE07E02C165E200076FE5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76CE07BE2C165E1F0076FE5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				764A38912C403DF700FA9552 /* ChatDisplayOutputViewController.swift in Sources */,
+				76CE07CA2C165E1F0076FE5D /* ChatViewController.swift in Sources */,
+				764A38962C40797D00FA9552 /* ChatDisplayOutputCollectionViewCell.swift in Sources */,
+				764A38942C403EA400FA9552 /* ChatDisplayOutputCollectionViewLayout.swift in Sources */,
+				764A388C2C3EBCBD00FA9552 /* MessageInputView.swift in Sources */,
+				764A388F2C40394300FA9552 /* KeyboardManager.swift in Sources */,
+				76CE07C62C165E1F0076FE5D /* AppDelegate.swift in Sources */,
+				76CE07C82C165E1F0076FE5D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76CE07D42C165E200076FE5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76CE07DD2C165E200076FE5D /* PregnancyApplicationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76CE07DE2C165E200076FE5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76CE07E72C165E200076FE5D /* PregnancyApplicationUITests.swift in Sources */,
+				76CE07E92C165E200076FE5D /* PregnancyApplicationUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76CE07DA2C165E200076FE5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76CE07C12C165E1F0076FE5D /* PregnancyApplication */;
+			targetProxy = 76CE07D92C165E200076FE5D /* PBXContainerItemProxy */;
+		};
+		76CE07E42C165E200076FE5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76CE07C12C165E1F0076FE5D /* PregnancyApplication */;
+			targetProxy = 76CE07E32C165E200076FE5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		76CE07CB2C165E1F0076FE5D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76CE07CC2C165E1F0076FE5D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		76CE07D02C165E200076FE5D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76CE07D12C165E200076FE5D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76CE07EA2C165E200076FE5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		76CE07EB2C165E200076FE5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		76CE07ED2C165E200076FE5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R4WEEFNVWZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PregnancyApplication/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PregnancyApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		76CE07EE2C165E200076FE5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R4WEEFNVWZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PregnancyApplication/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PregnancyApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		76CE07F02C165E200076FE5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R4WEEFNVWZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PregnancyApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PregnancyApplication.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PregnancyApplication";
+			};
+			name = Debug;
+		};
+		76CE07F12C165E200076FE5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R4WEEFNVWZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PregnancyApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PregnancyApplication.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PregnancyApplication";
+			};
+			name = Release;
+		};
+		76CE07F32C165E200076FE5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R4WEEFNVWZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PregnancyApplicationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PregnancyApplication;
+			};
+			name = Debug;
+		};
+		76CE07F42C165E200076FE5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R4WEEFNVWZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PregnancyApplicationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PregnancyApplication;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76CE07BD2C165E1F0076FE5D /* Build configuration list for PBXProject "PregnancyApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76CE07EA2C165E200076FE5D /* Debug */,
+				76CE07EB2C165E200076FE5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76CE07EC2C165E200076FE5D /* Build configuration list for PBXNativeTarget "PregnancyApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76CE07ED2C165E200076FE5D /* Debug */,
+				76CE07EE2C165E200076FE5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76CE07EF2C165E200076FE5D /* Build configuration list for PBXNativeTarget "PregnancyApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76CE07F02C165E200076FE5D /* Debug */,
+				76CE07F12C165E200076FE5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76CE07F22C165E200076FE5D /* Build configuration list for PBXNativeTarget "PregnancyApplicationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76CE07F32C165E200076FE5D /* Debug */,
+				76CE07F42C165E200076FE5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76CE07BA2C165E1F0076FE5D /* Project object */;
+}
