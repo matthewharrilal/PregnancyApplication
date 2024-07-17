@@ -75,11 +75,11 @@ private extension ChatViewController {
     
     func setupKeyboardManager() {
         keyboardManager.onKeyboardWillShow = { [weak self] keyboardHeight in
-            UIView.performWithoutAnimation {
+            UIView.animate(withDuration: 0.25, animations: {
                 guard let self = self else { return }
                 self.messageInputViewBottomConstraint.constant = -(keyboardHeight - self.view.safeAreaInsets.bottom + Constants.keyboardPadding)
                 self.view.layoutIfNeeded()
-            }
+            })
         }
         
         keyboardManager.onKeyboardWillHide = { [weak self] in

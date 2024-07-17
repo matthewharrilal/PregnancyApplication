@@ -10,9 +10,7 @@ import UIKit
 
 class ChatDisplayOutputViewController: UIViewController {
     
-//    var messages: [(String, Bool)] = [("Hello there my name is Matthew and I am reaching out to you regarding your car's extended warranty. Please reach out to us in a timely fashion to discuss further opportunities. Hello there my name is Matthew and I am reaching out to you regarding your car's extended warranty. Please reach out to us in a timely fashion to discuss further opportunities. Hello there my name is Matthew and I am reaching out to you regarding your car's extended warranty. Please reach out to us in a timely fashion to discuss further opportunities.", true), ("Please reach out to us in a timely fashion to discuss further opportunities.", false)]
-
-    var messages: [(String, Bool)] = [("Hello there my name is Matthew and I am reaching out to you regarding your car's extended warranty. Please reach out to us in a timely fashion to discuss further opportunities. Hello there my name is Matthew and I am reaching out to you regarding your car's extended warranty. Please reach out to us in a timely fashion to discuss further opportunities. Hello there my name is Matthew and I am reaching out to you regarding your car's extended warranty. Please reach out to us in a timely fashion to discuss further opportunities. Ending with this sentence. Or ending with this one how do you like this one. Dont hurt me. Dont hurt me. Dont hurt me. Escort yourself off the premises. Hello there my name is Matthew and I am reaching out to you regarding your car's extended warranty. Please reach out to us in a timely fashion to discuss further opportunities. Ending with this sentence. Or ending with this one how do you like this one. Dont hurt me. Dont hurt me. Dont hurt me. Escort yourself off the premises. Hello World. There was an assasination attempt on Trump how the heck does that even happen in 2302449. Escort yourself off the premises. Hello there my name is Matthew and I am reaching out to you regarding your car's extended warranty. Please reach out to us in a timely fashion to discuss further opportunities. Ending with this sentence. Or ending with this one how do you like this one. Dont hurt me. Dont hurt me. Dont hurt me. Escort yourself off the premises. Hello World. There was an assasination attempt on Trump how the heck does that even happen in 11111", true), ("Hello there my name is Matthew and I am reaching out to you regarding your car's extended warranty. Please reach out to us in a timely fashion to discuss further opportunities. Hello there my name is Matthew and I am reaching out to you regarding your car's extended warranty. Please reach out to us in a timely fashion to discuss further opportunities. Hello there my name is Matthew and I am reaching out to you regarding your car's extended warranty. Please reach out to us in a timely fashion to discuss further opportunities. Ending with this sentence. Or ending with this one how do you like this one. Dont hurt me. Dont hurt me. Dont hurt me.", false)]
+    var messages: [(String, Bool)] = [("Hello there my name is Matthew and I am reaching out to you regarding your car's extended warranty. Please reach out to us in a timely fashion to discuss further opportunities.", true), ("One two buckle my shoe one two buckle my shoe", false), ("I have come to discuss this partnership in further detail", true), ("I have come to discuss this partnership in further detail", false), ("I come from a distant planet not too far away from here and would like to abduct you all", true), ("I have come to discuss this partnership in further detail", false), ("I come from a distant planet not too far away from here and would like to abduct you all", true), ("I have come to discuss this partnership in further detail", false), ("I come from a distant planet not too far away from here and would like to abduct you all", true)]
     
     private let keyboardManager = KeyboardManager()
 
@@ -40,11 +38,6 @@ private extension ChatDisplayOutputViewController {
     
     func setup() {
         view.addSubview(collectionView)
-        
-        keyboardManager.onKeyboardWillShow = { keyboardHeight in
-            let indexPath = IndexPath(item: self.messages.count - 1, section: self.collectionView.numberOfSections - 1)
-            self.collectionView.scrollToItem(at: indexPath, at: .bottom, animated: true)
-        }
         
         NSLayoutConstraint.activate([
             collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -78,7 +71,7 @@ extension ChatDisplayOutputViewController: CustomMessageLayoutDelegate {
     
     func collectionView(_ collectionView: UICollectionView, layout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let message = messages[indexPath.row]
-        let width = collectionView.bounds.width * 0.75
+        let width = collectionView.bounds.width * 0.60
         
         // Create a temporary UILabel to calculate the height
         let tempLabel = UILabel()
@@ -95,6 +88,6 @@ extension ChatDisplayOutputViewController: CustomMessageLayoutDelegate {
         
         // Add padding
         let totalHeight = size.height
-        return CGSize(width: width, height: max(totalHeight, 73))
+        return CGSize(width: width, height: totalHeight)
     }
 }

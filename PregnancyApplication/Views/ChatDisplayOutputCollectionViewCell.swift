@@ -76,7 +76,7 @@ private extension ChatDisplayOutputCollectionViewCell {
             containerView.topAnchor.constraint(equalTo: contentView.topAnchor),
             containerView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
             
-            containerView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width * 0.75),
+            containerView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width * 0.60),
             
             messageTextLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 18),
             messageTextLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -18),

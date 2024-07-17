@@ -38,7 +38,7 @@ class ChatDisplayOutputCollectionViewLayout: UICollectionViewLayout {
             let isSender = delegate?.collectionView(collectionView, layout: self, isSenderAt: indexPath) ?? false
             let xOffset = isSender ? contentWidth - itemSize.width - 16 : 16
             
-            let frame = CGRect(x: xOffset, y: contentHeight, width: contentWidth, height: itemSize.height + 36)
+            let frame = CGRect(x: xOffset, y: contentHeight, width: itemSize.width, height: itemSize.height + 36)
             let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
             
             attributes.frame = frame
