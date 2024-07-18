@@ -21,6 +21,7 @@
 		76CE07DD2C165E200076FE5D /* PregnancyApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CE07DC2C165E200076FE5D /* PregnancyApplicationTests.swift */; };
 		76CE07E72C165E200076FE5D /* PregnancyApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CE07E62C165E200076FE5D /* PregnancyApplicationUITests.swift */; };
 		76CE07E92C165E200076FE5D /* PregnancyApplicationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CE07E82C165E200076FE5D /* PregnancyApplicationUITestsLaunchTests.swift */; };
+		76F25C212C4783E3003C588A /* CustomTapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F25C202C4783E3003C588A /* CustomTapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		76CE07E22C165E200076FE5D /* PregnancyApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PregnancyApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76CE07E62C165E200076FE5D /* PregnancyApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PregnancyApplicationUITests.swift; sourceTree = "<group>"; };
 		76CE07E82C165E200076FE5D /* PregnancyApplicationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PregnancyApplicationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		76F25C202C4783E3003C588A /* CustomTapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				764A388B2C3EBCBD00FA9552 /* MessageInputView.swift */,
 				764A38952C40797D00FA9552 /* ChatDisplayOutputCollectionViewCell.swift */,
+				76F25C202C4783E3003C588A /* CustomTapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76F25C212C4783E3003C588A /* CustomTapView.swift in Sources */,
 				764A38912C403DF700FA9552 /* ChatDisplayOutputViewController.swift in Sources */,
 				76CE07CA2C165E1F0076FE5D /* ChatViewController.swift in Sources */,
 				764A38962C40797D00FA9552 /* ChatDisplayOutputCollectionViewCell.swift in Sources */,

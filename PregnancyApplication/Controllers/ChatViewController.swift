@@ -15,10 +15,12 @@ class ChatViewController: UIViewController {
     
     private let keyboardManager = KeyboardManager()
     private var messageInputViewBottomConstraint: NSLayoutConstraint!
+    private lazy var displayOutputViewController = ChatDisplayOutputViewController()
     
-    private let messageInputView: MessageInputView = {
+    private lazy var messageInputView: MessageInputView = {
         let view = MessageInputView(frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.delegate = self
         return view
     }()
 
@@ -59,7 +61,6 @@ private extension ChatViewController {
     }
     
     func addDisplayOutputViewController() {
-        let displayOutputViewController = ChatDisplayOutputViewController()
         addChild(displayOutputViewController)
         view.addSubview(displayOutputViewController.view)
         
@@ -90,3 +91,9 @@ private extension ChatViewController {
     }
 }
 
+extension ChatViewController: MessageSentDelegate {
+    
+    func messageSent(text: String) {
+        displayOutputViewController.messageHasBeenSent(text)
+    }
+}

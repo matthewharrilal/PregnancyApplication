@@ -30,7 +30,7 @@ class ChatDisplayOutputCollectionViewCell: UICollectionViewCell {
         return view
     }()
     
-    private let messageTextLabel: UILabel = {
+    private lazy var messageTextLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .natural
@@ -76,7 +76,7 @@ private extension ChatDisplayOutputCollectionViewCell {
             containerView.topAnchor.constraint(equalTo: contentView.topAnchor),
             containerView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
             
-            containerView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width * 0.60),
+            containerView.widthAnchor.constraint(lessThanOrEqualToConstant: UIScreen.main.bounds.width * 0.60),
             
             messageTextLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 18),
             messageTextLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -18),

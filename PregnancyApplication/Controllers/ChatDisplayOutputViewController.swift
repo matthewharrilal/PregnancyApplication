@@ -34,9 +34,9 @@ class ChatDisplayOutputViewController: UIViewController {
     }
 }
 
-private extension ChatDisplayOutputViewController {
+extension ChatDisplayOutputViewController {
     
-    func setup() {
+    private func setup() {
         view.addSubview(collectionView)
         
         NSLayoutConstraint.activate([
@@ -45,6 +45,16 @@ private extension ChatDisplayOutputViewController {
             collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -10),
             collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 10)
         ])
+    }
+    
+    public func messageHasBeenSent(_ text: String) {
+        messages.append((text, false))
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            collectionView.reloadData()
+            let indexPath = IndexPath(item: messages.count - 1, section: collectionView.numberOfSections - 1)
+            collectionView.scrollToItem(at: indexPath, at: .bottom, animated: true)
+        }
     }
 }
 
@@ -83,11 +93,11 @@ extension ChatDisplayOutputViewController: CustomMessageLayoutDelegate {
         // Set the width constraint
         let targetSize = CGSize(width: width - 36, height: .greatestFiniteMagnitude)
         let size = tempLabel.systemLayoutSizeFitting(targetSize,
-                                                     withHorizontalFittingPriority: .required,
+                                                     withHorizontalFittingPriority: .fittingSizeLevel,
                                                      verticalFittingPriority: .fittingSizeLevel)
         
         // Add padding
         let totalHeight = size.height
-        return CGSize(width: width, height: totalHeight)
+        return CGSize(width: size.width + 54, height: totalHeight)
     }
 }
