@@ -17,6 +17,8 @@ protocol CustomMessageLayoutDelegate: AnyObject {
 class ChatDisplayOutputCollectionViewLayout: UICollectionViewLayout {
     weak var delegate: CustomMessageLayoutDelegate?
     
+    private var isSenderAtPrevious: Bool? = nil
+    
     private var cache: [UICollectionViewLayoutAttributes] = []
     private var contentHeight: CGFloat = 0
     private var contentWidth: CGFloat {
@@ -38,13 +40,23 @@ class ChatDisplayOutputCollectionViewLayout: UICollectionViewLayout {
             let isSender = delegate?.collectionView(collectionView, layout: self, isSenderAt: indexPath) ?? false
             let xOffset = isSender ? UIScreen.main.bounds.width - itemSize.width : 16
             
-            let frame = CGRect(x: xOffset, y: contentHeight, width: itemSize.width, height: itemSize.height + 36)
+            let spacing: CGFloat
+            if let isSenderAtPrevious = isSenderAtPrevious {
+                spacing = isSenderAtPrevious == isSender ? 4 : 39
+            } else {
+                // Meaning that we are at the first item if isSenderAtPrevious hasn't been set yet
+                spacing = 0
+            }
+            
+            // Content height will always be set at the bottom of the collection view due to contentHeight = frame.maxY
+            let frame = CGRect(x: xOffset, y: contentHeight + spacing, width: itemSize.width, height: itemSize.height + 36)
             let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
             
             attributes.frame = frame
             cache.append(attributes)
-            contentHeight += itemSize.height + 75
+            contentHeight = frame.maxY
             
+            isSenderAtPrevious = isSender
         }
     }
     
