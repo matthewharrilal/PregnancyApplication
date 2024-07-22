@@ -15,7 +15,7 @@ class ChatViewController: UIViewController {
     
     private let keyboardManager = KeyboardManager()
     private var messageInputViewBottomConstraint: NSLayoutConstraint!
-    private lazy var displayOutputViewController = ChatDisplayOutputViewController()
+    private let displayOutputViewControllerProtocol: DisplayOutputViewControllerProtocol
     
     private lazy var messageInputView: MessageInputView = {
         let view = MessageInputView(frame: .zero)
@@ -23,7 +23,16 @@ class ChatViewController: UIViewController {
         view.delegate = self
         return view
     }()
-
+    
+    init(displayOutputViewControllerProtocol: DisplayOutputViewControllerProtocol) {
+        self.displayOutputViewControllerProtocol = displayOutputViewControllerProtocol
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -61,17 +70,7 @@ private extension ChatViewController {
     }
     
     func addDisplayOutputViewController() {
-        addChild(displayOutputViewController)
-        view.addSubview(displayOutputViewController.view)
-        
-        displayOutputViewController.view.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            displayOutputViewController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            displayOutputViewController.view.bottomAnchor.constraint(equalTo: messageInputView.topAnchor),
-            displayOutputViewController.view.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
-            displayOutputViewController.view.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor)
-        ])
-        displayOutputViewController.didMove(toParent: self)
+        displayOutputViewControllerProtocol.addToParent(self, belowView: messageInputView)
     }
     
     func setupKeyboardManager() {
@@ -94,6 +93,6 @@ private extension ChatViewController {
 extension ChatViewController: MessageSentDelegate {
     
     func messageSent(text: String) {
-        displayOutputViewController.messageHasBeenSent(text)
+        displayOutputViewControllerProtocol.messageHasBeenSent(text)
     }
 }
