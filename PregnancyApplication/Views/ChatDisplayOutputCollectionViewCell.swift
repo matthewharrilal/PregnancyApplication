@@ -57,7 +57,7 @@ class ChatDisplayOutputCollectionViewCell: UICollectionViewCell {
         case .receiver:
             containerView.backgroundColor = .green
         case .sender:
-            containerView.backgroundColor = .red
+            containerView.backgroundColor = .blue
         }
         
         contentView.layoutIfNeeded()
@@ -76,7 +76,7 @@ private extension ChatDisplayOutputCollectionViewCell {
             containerView.topAnchor.constraint(equalTo: contentView.topAnchor),
             containerView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
             
-            containerView.widthAnchor.constraint(lessThanOrEqualToConstant: UIScreen.main.bounds.width * 0.60),
+            containerView.widthAnchor.constraint(lessThanOrEqualToConstant: UIScreen.main.bounds.width * 0.65),
             
             messageTextLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 18),
             messageTextLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -18),
